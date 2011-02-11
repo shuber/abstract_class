@@ -19,7 +19,7 @@ Abstract classes in ruby
 
   # RuntimeError: abstract class ActiveRecord::Base can't be instantiated/allocated
   ActiveRecord::Base.new
-  ActiveRecord::Base.allocated
+  ActiveRecord::Base.allocate
 
   # instantiates/allocates like normal
   User.new
