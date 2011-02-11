@@ -3,7 +3,7 @@ module AbstractClass
   autoload :TestHelper, 'abstract_class/test_helper'
   autoload :Version,    'abstract_class/version'
 
-  # <tt>alias_method_chain</tt>s the <tt>allocate</tt> and <tt>new</tt> methods with <tt>:abstract_class</tt>
+  # When included, it will <tt>alias_method_chain</tt> <tt>allocate</tt> and <tt>new</tt> methods with <tt>:abstract_class</tt> in <tt>klass</tt>
   def self.included(klass)
     klass.class_eval do
       alias_method :allocate_without_abstract_class, :allocate
