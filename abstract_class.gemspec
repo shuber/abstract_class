@@ -3,7 +3,7 @@ require 'lib/abstract_class/version'
 
 Gem::Specification.new do |s| 
   s.name    = 'abstract_class'
-  s.version = Interface::Version.string
+  s.version = AbstractClass::Version.string
   s.date    = Date.today.to_s
 
   s.summary     = 'Abstract classes in ruby'
