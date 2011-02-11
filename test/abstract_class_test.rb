@@ -4,7 +4,7 @@ class BaseClass
   abstract
 end
 
-class DerivedClass
+class DerivedClass < BaseClass
 end
 
 class AbstractClassTest < Test::Unit::TestCase
