@@ -10,7 +10,24 @@ Abstract classes in ruby
 
 == Usage
 
-Coming soon...
+  class ActiveRecord::Base
+    abstract
+  end
+
+  class User < ActiveRecord::Base
+  end
+
+  # RuntimeError: abstract class ActiveRecord::Base can't be instantiated/allocated
+  ActiveRecord::Base.new
+  ActiveRecord::Base.allocated
+
+  # instantiates/allocates like normal
+  User.new
+  User.allocate
+
+  # returns true or false
+  ActiveRecord::Base.abstract?
+  User.abstract?
 
 
 == Testing abstract classes
