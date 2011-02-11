@@ -1,14 +1,14 @@
 module AbstractClass
   # Contains abstract class testing assertions to include in your test framework
   module TestHelper
-    # Asserts that the specified <tt>klass</tt> has been declared as abstract
+    # Asserts that the specified <tt>classes</tt> have been declared as abstract
     def assert_abstract_classes(*classes)
       result, message = abstract_class_test(classes.flatten, true)
       assert_block(message) { result }
     end
     alias_method :assert_abstract_class, :assert_abstract_classes
 
-    # Asserts that the specified <tt>klass</tt> has not been declared as abstract
+    # Asserts that the specified <tt>classes</tt> have not been declared as abstract
     def assert_not_abstract_classes(*classes)
       result, message = abstract_class_test(classes.flatten, false)
       assert_block(message) { result }
