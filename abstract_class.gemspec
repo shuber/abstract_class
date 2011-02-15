@@ -1,10 +1,16 @@
-require 'date'
-require 'lib/abstract_class/version'
+# -*- encoding: utf-8 -*-
 
-Gem::Specification.new do |s| 
-  s.name    = 'abstract_class'
-  s.version = AbstractClass::Version.string
-  s.date    = Date.today.to_s
+lib = File.expand_path('../lib/', __FILE__)
+$:.unshift lib unless $:.include?(lib)
+
+require 'abstract_class/version'
+require 'date'
+
+Gem::Specification.new do |s|
+  s.name     = 'abstract_class'
+  s.version  = AbstractClass::Version.string
+  s.date     = Date.today
+  s.platform = Gem::Platform::RUBY
 
   s.summary     = 'Abstract classes in ruby'
   s.description = 'Abstract classes in ruby'
@@ -13,24 +19,11 @@ Gem::Specification.new do |s|
   s.email    = 'shuber@huberry.com'
   s.homepage = 'http://github.com/shuber/abstract_class'
 
-  s.has_rdoc = false
+  s.has_rdoc     = true
   s.rdoc_options = ['--line-numbers', '--inline-source', '--main', 'README.rdoc']
 
   s.require_paths = ['lib']
 
-  s.files = %w(
-    lib/abstract_class.rb
-    lib/abstract_class/test_helper.rb
-    lib/abstract_class/version.rb
-    MIT-LICENSE
-    Rakefile
-    README.rdoc
-    test/abstract_class_test.rb
-    test/test_helper.rb
-  )
-
-  s.test_files = %w(
-    test/abstract_class_test.rb
-    test/test_helper.rb
-  )
+  s.files      = Dir['{bin,lib}/**/*'] + %w(MIT-LICENSE README.rdoc)
+  s.test_files = Dir['test/**/*']
 end
