@@ -10,7 +10,7 @@ module AbstractClass
     # Example
     #
     #   Version.string # '1.0.2'
-    def self.string
+    def self.to_s
       [MAJOR, MINOR, PATCH].join('.')
     end
   end

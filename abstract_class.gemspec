@@ -8,7 +8,7 @@ require 'date'
 
 Gem::Specification.new do |s|
   s.name     = 'abstract_class'
-  s.version  = AbstractClass::Version.string
+  s.version  = AbstractClass::Version
   s.date     = Date.today
   s.platform = Gem::Platform::RUBY
 
@@ -18,9 +18,6 @@ Gem::Specification.new do |s|
   s.author   = 'Sean Huber'
   s.email    = 'shuber@huberry.com'
   s.homepage = 'http://github.com/shuber/abstract_class'
-
-  s.has_rdoc     = true
-  s.rdoc_options = ['--line-numbers', '--inline-source', '--main', 'README.rdoc']
 
   s.require_paths = ['lib']
 
