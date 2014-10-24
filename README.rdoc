@@ -1,6 +1,6 @@
 = abstract_class
 
-Abstract classes in ruby
+Abstract classes in ruby. Like modules, they cannot be instantiated, however they can be inherited and the derived class can be instantiated.
 
 
 == Installation
