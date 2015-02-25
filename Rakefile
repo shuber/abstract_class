@@ -1,6 +1,7 @@
 require 'rake'
 require 'rake/testtask'
 require 'rake/task'
+require 'rdoc'
 
 desc 'Default: run unit tests'
 task :default => :test
@@ -13,7 +14,7 @@ Rake::TestTask.new(:test) do |t|
 end
 
 desc 'Generate documentation for the abstract_class gem'
-Rake::RDocTask.new(:rdoc) do |rdoc|
+RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title    = 'abstract_class'
   rdoc.options << '--line-numbers' << '--inline-source'

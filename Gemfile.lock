@@ -7,6 +7,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     rake (10.4.2)
+    rdoc (4.1.0)
 
 PLATFORMS
   ruby
@@ -14,3 +15,4 @@ PLATFORMS
 DEPENDENCIES
   abstract_class!
   rake
+  rdoc
