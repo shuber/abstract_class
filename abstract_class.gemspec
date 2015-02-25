@@ -1,5 +1,3 @@
-# -*- encoding: utf-8 -*-
-
 require_relative 'lib/abstract_class/version'
 
 Gem::Specification.new do |s|
