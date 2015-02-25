@@ -34,6 +34,11 @@ Unlike modules, these classes can be inherited and any derived class can be inst
   User.abstract?
 
 
+== Testing
+
+  bundle exec rspec
+
+
 == Contributing
 
 * Fork the project.
