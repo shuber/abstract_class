@@ -1,12 +1,10 @@
 # -*- encoding: utf-8 -*-
 
 require_relative 'lib/abstract_class/version'
-require 'date'
 
 Gem::Specification.new do |s|
   s.name     = 'abstract_class'
   s.version  = AbstractClass::Version
-  s.date     = Date.today
   s.platform = Gem::Platform::RUBY
 
   s.summary     = 'Abstract classes in ruby'
