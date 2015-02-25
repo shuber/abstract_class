@@ -2,7 +2,9 @@
 
 Experimental abstract classes in ruby.
 
-Like modules, abstract classes cannot be instantiated. Unlike modules, these classes can be inherited and any derived class can be instantiated.
+Like modules, abstract classes cannot be instantiated.
+
+Unlike modules, these classes can be inherited and any derived class can be instantiated.
 
 
 == Installation
