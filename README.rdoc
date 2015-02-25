@@ -1,5 +1,7 @@
 = abstract_class
 
+{<img src="https://codeclimate.com/github/shuber/abstract_class/badges/gpa.svg" />}[https://codeclimate.com/github/shuber/abstract_class]
+
 Experimental abstract classes in ruby.
 
 Like modules, abstract classes cannot be instantiated.
