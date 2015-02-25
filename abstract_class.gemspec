@@ -18,5 +18,6 @@ Gem::Specification.new do |s|
   s.files      = Dir['{bin,lib}/**/*'] + %w(LICENSE README.rdoc)
   s.test_files = Dir['spec/**/*']
 
+  s.add_development_dependency 'codeclimate-test-reporter'
   s.add_development_dependency 'rspec'
 end
