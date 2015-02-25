@@ -13,12 +13,12 @@ Gem::Specification.new do |s|
   s.author   = 'Sean Huber'
   s.email    = 'github@shuber.io'
   s.homepage = 'https://github.com/shuber/abstract_class'
+  s.license  = "MIT"
 
   s.require_paths = ['lib']
 
   s.files      = Dir['{bin,lib}/**/*'] + %w(LICENSE README.rdoc)
   s.test_files = Dir['test/**/*']
-  s.license    = "MIT"
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rdoc'
