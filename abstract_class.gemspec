@@ -18,7 +18,5 @@ Gem::Specification.new do |s|
   s.files      = Dir['{bin,lib}/**/*'] + %w(LICENSE README.rdoc)
   s.test_files = Dir['test/**/*']
 
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'rdoc'
   s.add_development_dependency 'rspec'
 end
