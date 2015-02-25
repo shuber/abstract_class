@@ -23,4 +23,6 @@ Gem::Specification.new do |s|
 
   s.files      = Dir['{bin,lib}/**/*'] + %w(MIT-LICENSE README.rdoc)
   s.test_files = Dir['test/**/*']
+
+  s.add_development_dependency 'rake'
 end
