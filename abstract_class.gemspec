@@ -1,9 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-lib = File.expand_path('../lib/', __FILE__)
-$:.unshift lib unless $:.include?(lib)
-
-require 'abstract_class/version'
+require_relative 'lib/abstract_class/version'
 require 'date'
 
 Gem::Specification.new do |s|
