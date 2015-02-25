@@ -1,6 +1,8 @@
 = abstract_class
 
-Abstract classes in ruby. Like modules, they cannot be instantiated, however they can be inherited and the derived class can be instantiated.
+Experimental abstract classes in ruby.
+
+Like modules, abstract classes cannot be instantiated. Unlike modules, these classes can be inherited and any derived class can be instantiated.
 
 
 == Installation
@@ -56,7 +58,7 @@ Then you can use <tt>assert_abstract_class</tt> or <tt>assert_not_abstract_class
   end
 
 
-== Patches and pull requests
+== Contributing
 
 * Fork the project.
 * Make your feature addition or bug fix.
