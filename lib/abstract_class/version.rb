@@ -5,7 +5,9 @@ module AbstractClass
     MINOR = 0
     PATCH = 2
 
-    # Returns a version string by joining <tt>MAJOR</tt>, <tt>MINOR</tt>, and <tt>PATCH</tt> with <tt>'.'</tt>
+    # Returns a version string by joining
+    # <tt>MAJOR</tt>, <tt>MINOR</tt>, and <tt>PATCH</tt>
+    # with <tt>'.'</tt>
     #
     # Example
     #
