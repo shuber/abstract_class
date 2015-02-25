@@ -37,11 +37,6 @@ class AbstractClassTest < Test::Unit::TestCase
 
   def test_should_assert_class_is_abstract
     assert_abstract_class @base_class
-    assert_raises(Test::Unit::AssertionFailedError) { assert_abstract_class @derived_class }
-  end
-
-  def test_should_assert_class_is_not_abstract
     assert_not_abstract_class @derived_class
-    assert_raises(Test::Unit::AssertionFailedError) { assert_not_abstract_class @base_class }
   end
 end
