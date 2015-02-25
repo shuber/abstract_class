@@ -32,32 +32,6 @@ Like modules, abstract classes cannot be instantiated. Unlike modules, these cla
   User.abstract?
 
 
-== Testing abstract classes
-
-Include <tt>AbstractClass::TestHelper</tt> in your test framework
-
-  Test::Unit::TestCase.send(:include, AbstractClass::TestHelper)
-
-Then you can use <tt>assert_abstract_class</tt> or <tt>assert_not_abstract_class</tt>) in your tests
-
-  class AbstractClass
-    abstract
-  end
-
-  class NormalClass < AbstractClass
-  end
-
-  class AbstractClassTest < Test::Unit::TestCase
-    def test_should_be_abstract_class
-      assert_abstract_class AbstractClass
-    end
-
-    def test_should_not_be_abstract_classes
-      assert_not_abstract_classes NormalClass, Hash
-    end
-  end
-
-
 == Contributing
 
 * Fork the project.

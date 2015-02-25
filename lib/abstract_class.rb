@@ -1,4 +1,3 @@
-require 'abstract_class/test_helper'
 require 'abstract_class/version'
 
 # Adds the ability to declare classes as abstract
