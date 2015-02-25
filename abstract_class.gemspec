@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.description = 'Abstract classes in ruby'
 
   s.author   = 'Sean Huber'
-  s.email    = 'shuber@huberry.com'
+  s.email    = 'github@shuber.io'
   s.homepage = 'http://github.com/shuber/abstract_class'
 
   s.require_paths = ['lib']
