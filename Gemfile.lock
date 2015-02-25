@@ -1,0 +1,14 @@
+PATH
+  remote: .
+  specs:
+    abstract_class (0.0.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  abstract_class!
