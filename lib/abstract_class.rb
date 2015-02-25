@@ -1,9 +1,9 @@
+require 'abstract_class/test_helper'
+require 'abstract_class/version'
+
 # Adds the ability to declare classes as abstract
 # so that they can't be instantiated or allocated
 module AbstractClass
-  autoload :TestHelper, 'abstract_class/test_helper'
-  autoload :Version,    'abstract_class/version'
-
   # When included, it will <tt>alias_method_chain</tt> the <tt>allocate</tt>
   # and <tt>new</tt> methods with <tt>:abstract_class</tt> in <tt>klass</tt>
   def self.included(klass)
