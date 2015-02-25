@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
 
   s.author   = 'Sean Huber'
   s.email    = 'github@shuber.io'
-  s.homepage = 'http://github.com/shuber/abstract_class'
+  s.homepage = 'https://github.com/shuber/abstract_class'
 
   s.require_paths = ['lib']
 
