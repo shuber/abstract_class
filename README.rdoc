@@ -16,24 +16,31 @@ Unlike modules, these classes can be inherited and any derived class can be inst
 
 == Usage
 
+Define an abstract class
+
   class ActiveRecord::Base
     abstract
   end
 
+Try to initialize or allocate an instance of the class
+
+  ActiveRecord::Base.new      #=> AbstractClass::Error - abstract class ActiveRecord::Base can't be instantiated
+  ActiveRecord::Base.allocate #=> AbstractClass::Error - abstract class ActiveRecord::Base can't be allocated
+
+Define a child class derived from an abstract class
+
   class User < ActiveRecord::Base
   end
 
-  # RuntimeError: abstract class ActiveRecord::Base can't be instantiated/allocated
-  ActiveRecord::Base.new
-  ActiveRecord::Base.allocate
+Instantiation/allocation works like normal
 
-  # instantiates/allocates like normal
   User.new
   User.allocate
 
-  # returns true or false
-  ActiveRecord::Base.abstract?
-  User.abstract?
+Check if a class is abstract
+
+  ActiveRecord::Base.abstract? #=> true
+  User.abstract?               #=> false
 
 
 == Testing
