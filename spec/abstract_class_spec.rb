@@ -3,6 +3,7 @@ require_relative '../lib/abstract_class'
 RSpec.describe AbstractClass do
   let(:abstract) { Class.new { abstract } }
   let(:derived)  { Class.new abstract }
+  let(:error)    { described_class::Error }
 
   describe '.abstract?' do
     it 'should return true if the class is abstract' do
@@ -17,7 +18,7 @@ RSpec.describe AbstractClass do
   describe '.allocate' do
     it 'should not allow an abstract class to be allocated' do
       initializer = -> { abstract.allocate }
-      expect(initializer).to raise_error(RuntimeError)
+      expect(initializer).to raise_error error
     end
 
     it 'should allow a derived class to be allocated' do
@@ -34,7 +35,7 @@ RSpec.describe AbstractClass do
   describe '.new' do
     it 'should not allow an abstract class to be initialized' do
       initializer = -> { abstract.new }
-      expect(initializer).to raise_error(RuntimeError)
+      expect(initializer).to raise_error error
     end
 
     it 'should allow a derived class to be initialized' do

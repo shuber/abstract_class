@@ -3,6 +3,8 @@ require 'abstract_class/version'
 # Adds the ability to declare classes as abstract
 # so that they can't be instantiated or allocated
 module AbstractClass
+  Error = Class.new RuntimeError
+
   # When included, it will <tt>alias_method_chain</tt> the <tt>allocate</tt>
   # and <tt>new</tt> methods with <tt>:abstract_class</tt> in <tt>klass</tt>
   def self.included(klass)
@@ -30,7 +32,7 @@ module AbstractClass
   # returns <tt>allocate_without_abstract_class</tt>
   def allocate_with_abstract_class
     if abstract?
-      raise "abstract class #{self} can't be allocated"
+      raise Error, "abstract class #{self} can't be allocated"
     else
       allocate_without_abstract_class
     end
@@ -40,7 +42,7 @@ module AbstractClass
   # returns <tt>new_without_abstract_class</tt>
   def new_with_abstract_class(*args, &block)
     if abstract?
-      raise "abstract class #{self} can't be instantiated"
+      raise Error, "abstract class #{self} can't be instantiated"
     else
       new_without_abstract_class(*args, &block)
     end
