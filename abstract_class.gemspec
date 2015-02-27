@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
 
   s.summary     = 'Abstract classes in ruby'
-  s.description = 'Experimental abstract classes in ruby'
+  s.description = 'An implementation of the "abstract class" pattern in ruby'
 
   s.author   = 'Sean Huber'
   s.email    = 'github@shuber.io'
