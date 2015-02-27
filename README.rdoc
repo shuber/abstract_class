@@ -36,8 +36,8 @@ Define a child class derived from an abstract class
 
 Instantiation/allocation works like normal
 
-  User.new
-  User.allocate
+  User.new      #=> #<User:0x003d066d5a861d>
+  User.allocate #=> #<User:0x007f87588491d0>
 
 Check if a class is abstract
 
