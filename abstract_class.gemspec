@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.author   = 'Sean Huber'
   s.email    = 'github@shuber.io'
   s.homepage = 'https://github.com/shuber/abstract_class'
-  s.license  = "MIT"
+  s.license  = 'MIT'
 
   s.require_paths = ['lib']
 
