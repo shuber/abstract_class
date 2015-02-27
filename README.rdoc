@@ -2,11 +2,13 @@
 
 {<img src="https://travis-ci.org/shuber/abstract_class.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/shuber/abstract_class] {<img src="https://codeclimate.com/github/shuber/abstract_class/badges/gpa.svg" />}[https://codeclimate.com/github/shuber/abstract_class] {<img src="https://codeclimate.com/github/shuber/abstract_class/badges/coverage.svg" />}[https://codeclimate.com/github/shuber/abstract_class]
 
-Experimental abstract classes in ruby.
+Abstract classes in ruby.
 
 Like modules, abstract classes cannot be instantiated.
 
-Unlike modules, these classes can be inherited and any derived class can be instantiated.
+Unlike modules, abstract classes can be inherited and their derived classes can be instantiated.
+
+Check out the {java}[http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html] or {php}[http://php.net/manual/en/language.oop5.abstract.php] implementations for additional examples.
 
 
 == Installation
