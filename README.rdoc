@@ -18,8 +18,10 @@ Check out the {java}[http://docs.oracle.com/javase/tutorial/java/IandI/abstract.
 
 Define an abstract class
 
-  class ActiveRecord::Base
-    abstract
+  module ActiveRecord
+    class Base
+      extend AbstractClass
+    end
   end
 
 Try to initialize or allocate an instance of the class
@@ -36,11 +38,6 @@ Instantiation/allocation works like normal
 
   User.new      #=> #<User:0x003d066d5a861d>
   User.allocate #=> #<User:0x007f87588491d0>
-
-Check if a class is abstract
-
-  ActiveRecord::Base.abstract? #=> true
-  User.abstract?               #=> false
 
 
 == Testing
