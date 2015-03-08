@@ -3,7 +3,7 @@ require 'abstract_class/version'
 # Adds the ability to declare classes as abstract
 # so that they can't be instantiated or allocated
 module AbstractClass
-  Error = Class.new RuntimeError
+  Error = Class.new(RuntimeError)
 
   # When included, it will <tt>alias_method_chain</tt> the <tt>allocate</tt>
   # and <tt>new</tt> methods with <tt>:abstract_class</tt> in <tt>klass</tt>
