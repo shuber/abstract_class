@@ -2,10 +2,4 @@ addons:
   code_climate:
     repo_token: c70d4a471411de40144f39e7264f10a99b5530522f996c872a26eddf3c4208f3
 
-rvm:
-  - 1.8.7
-  - 1.9.3
-  - 2.0.0
-  - ruby-head
-
 script: bundle exec rspec
