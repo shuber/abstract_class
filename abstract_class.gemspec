@@ -15,6 +15,5 @@ Gem::Specification.new do |s|
   s.test_files       = `git ls-files -- spec/*`.split("\n")
   s.version          = AbstractClass::VERSION
 
-  s.add_development_dependency 'codeclimate-test-reporter'
   s.add_development_dependency 'rspec'
 end
