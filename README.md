@@ -2,9 +2,9 @@
 
 > Abstract classes in Ruby.
 
-Like modules, abstract classes *cannot be instantiated*.
+Like modules, abstract classes **cannot be instantiated**.
 
-Unlike modules, abstract classes can be inherited and their *derived classes can be instantiated*.
+Unlike modules, abstract classes can be inherited and their **derived classes can be instantiated**.
 
 Check out the [java] or [php] implementations for additional examples.
 
