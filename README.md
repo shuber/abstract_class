@@ -18,6 +18,10 @@ gem install abstract_class
 ```
 
 
+## Requirements
+
+Ruby 1.8.7+
+
 ## Usage
 
 To make a class *abstract*, simply extend the `AbstractClass` module.
