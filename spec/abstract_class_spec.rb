@@ -19,7 +19,7 @@ RSpec.describe AbstractClass do
 
   describe '.allocate' do
     it 'should not allow an abstract class to be allocated' do
-      initializer = -> { abstract.allocate }
+      initializer = proc { abstract.allocate }
       expect(initializer).to raise_error(error)
     end
 
@@ -30,7 +30,7 @@ RSpec.describe AbstractClass do
 
   describe '.new' do
     it 'should not allow an abstract class to be initialized' do
-      initializer = -> { abstract.new }
+      initializer = proc { abstract.new }
       expect(initializer).to raise_error(error)
     end
 
