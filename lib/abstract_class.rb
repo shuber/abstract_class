@@ -26,9 +26,9 @@ module AbstractClass
 
   private
 
-  def raise_if_abstract(type)
+  def raise_if_abstract(method)
     if abstract_classes.include?(self)
-      raise Error, "abstract class #{self} can't be #{type}"
+      raise Error, "abstract class #{self} can't be #{method}"
     else
       yield
     end
