@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    abstract_class (1.0.0)
+    abstract_class (1.0.1)
 
 GEM
   remote: https://rubygems.org/
