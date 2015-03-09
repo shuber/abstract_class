@@ -52,6 +52,11 @@ User.allocate #=> #<User:0x007f87588491d0>
 ```
 
 
+## API
+
+[YARD Documentation](http://www.rubydoc.info/github/shuber/abstract_class/master)
+
+
 ## Testing
 
 ```
