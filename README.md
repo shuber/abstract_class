@@ -20,7 +20,7 @@ gem install abstract_class
 
 ## Usage
 
-Define an abstract class
+To make a class *abstract*, simply extend the `AbstractClass` module.
 
 ```ruby
 module ActiveRecord
@@ -30,21 +30,21 @@ module ActiveRecord
 end
 ```
 
-Try to initialize or allocate an instance of the class
+Any attempts to initialize or allocate an instance of an *abstract* class raises `AbstractClass::Error`.
 
 ```ruby
 ActiveRecord::Base.new      #=> AbstractClass::Error - abstract class ActiveRecord::Base can't be instantiated
 ActiveRecord::Base.allocate #=> AbstractClass::Error - abstract class ActiveRecord::Base can't be allocated
 ```
 
-Define a child class derived from an abstract class
+Child classes can inherit from an *abstract* class.
 
 ```ruby
 class User < ActiveRecord::Base
 end
 ```
 
-Instantiation/allocation works like normal
+Instantiation and allocation behaves like normal for descendants of *abstract* classes.
 
 ```ruby
 User.new      #=> #<User:0x003d066d5a861d>
