@@ -2,7 +2,7 @@ require File.expand_path('../lib/abstract_class/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.name     = 'abstract_class'
-  s.version  = AbstractClass::Version
+  s.version  = AbstractClass::VERSION
   s.platform = Gem::Platform::RUBY
 
   s.summary     = 'Abstract classes in ruby'
