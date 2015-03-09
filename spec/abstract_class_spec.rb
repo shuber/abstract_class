@@ -1,4 +1,4 @@
-require_relative '../lib/abstract_class'
+require File.expand_path('../../lib/abstract_class', __FILE__)
 
 RSpec.describe AbstractClass do
   let(:abstract) { Class.new.extend(described_class) }
