@@ -14,12 +14,12 @@ module AbstractClass
     @@abstract_classes ||= []
   end
 
-  # Raises {AbstractClass::Error} if the class is abstract
+  # Raises {AbstractClass::Error} if the class is abstract.
   def allocate(*args)
     raise_if_abstract(:allocated) { super }
   end
 
-  # Raises {AbstractClass::Error} if the class is abstract
+  # Raises {AbstractClass::Error} if the class is abstract.
   def new(*args)
     raise_if_abstract(:instantiated) { super }
   end
