@@ -1,5 +1,7 @@
 # [![Sean Huber](https://cloud.githubusercontent.com/assets/2419/6550752/832d9a64-c5ea-11e4-9717-6f9aa6e023b5.png)](https://github.com/shuber) abstract_class
 
+[![Join the chat at https://gitter.im/shuber/abstract_class](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/shuber/abstract_class?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](https://travis-ci.org/shuber/abstract_class.svg?branch=master)](https://travis-ci.org/shuber/abstract_class) [![Code Climate](https://codeclimate.com/github/shuber/abstract_class/badges/gpa.svg)](https://codeclimate.com/github/shuber/abstract_class) [![Coverage](https://codeclimate.com/github/shuber/abstract_class/badges/coverage.svg)](https://codeclimate.com/github/shuber/abstract_class) [![Gem Version](https://badge.fury.io/rb/abstract_class.svg)](http://badge.fury.io/rb/abstract_class)
 
 > Abstract classes in Ruby.
